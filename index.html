@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <style>
+  body {
+    background-color: #8b181b;
+    padding:0em;
+    margin:0px;
+  }
+  a#bookmarklet {
+    margin:0 auto;
+    color: white;
+  }
+  a {
+    -webkit-background-clip: border-box;
+    -webkit-background-origin: padding-box;
+    -webkit-background-size: auto;
+    -webkit-font-smoothing: antialiased;
+    -webkit-transition-delay: 0s;
+    -webkit-transition-duration: 0.20000000298023224s;
+    -webkit-transition-property: all;
+    -webkit-transition-timing-function: linear;
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: transparent;
+    background-image: none;
+    background-origin: padding-box;
+    background-size: auto;
+    color: #E56F30;
+    cursor: auto;
+    display: inline;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    height: auto;
+    line-height: 24px;
+    list-style-type: none;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    text-align: left;
+    text-decoration: none;
+    width: auto;
+    text-decoration: underline
+  }
+  .helper {
+    margin-left:1em;
+    font-size:bold;
+    color: white;
+    font-family: Helvetica;
+  }
+  #logobar {
+    background-color: white;
+    margin:0px;
+  }
+  #logo {
+    margin:1em;
+  }
+  #content {
+    padding-top: 1em;
+    text-align: center;
+  }
+  </style>
+</head>
+<body>
+<div id="logobar">
+  <img src="tv4logo.png" id="logo" />
+</div>
+
+<div id="content">
+<a href="javascript:(function() {  if(!window.intellibar) {    var scriptUrl = 'https://dl.dropboxusercontent.com/u/8538600/burt/bookmarklets/TV4-IntelliBar/intellibar.js';    var s=document.createElement('script');    s.setAttribute('src',scriptUrl);    s.setAttribute('type', 'text/javascript');    document.getElementsByTagName('head')[0].appendChild(s);  }    else {      window.intellibar();    }})();" id="bookmarklet">TV4 IntelliBar</a><span class="helper">&#8592; (Drag länk till bokmärkesfältet)</span>
+</div>
+</body>
+</html>
